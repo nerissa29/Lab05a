@@ -56,9 +56,9 @@ Test this function by hand in the console to get it working, and when you think 
 // collaborated with Nu
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   let sumOfThree = sum(sum(a, b)[0], c)[0]; // sum(11, c) // sum(11, 5)[0]
-  let multiple = multiply(multiply(a, b)[0], c)[0]  // -> multiply(28, c)
-  let sumString = `${a} and ${b} and ${c} sum to ${sumOfThree}.`
-  let prodStr = `The product of ${a} and ${b} and ${c} is ${multiple}.`
+  let multiple = multiply(multiply(a, b)[0], c)[0]; // -> multiply(28, c)
+  let sumString = `${a} and ${b} and ${c} sum to ${sumOfThree}.`;
+  let prodStr = `The product of ${a} and ${b} and ${c} is ${multiple}.`;
   return [sumOfThree, multiple, sumString, prodStr];
 }
 
@@ -81,6 +81,11 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  let arrSum = 0;
+  for (let i = 0; i < sumArr; i++) {
+    arrSum += sum(i);
+
+  }
 
 }
 
